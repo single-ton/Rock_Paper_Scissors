@@ -10,11 +10,8 @@ public class Tests extends StageTest<String> {
           "scissors"};
 
   public List<TestCase<String>> generate(){
-    String[] options = new String[]{"rock",
-            "paper",
-            "scissors"};
     List<TestCase<String>> tests = new ArrayList<TestCase<String>>();
-    for(String input : options){
+    for(String input : cases){
       TestCase<String> testCase = new TestCase<String>();
       testCase.setAttach(getWin(input));
       testCase.setInput(input);
