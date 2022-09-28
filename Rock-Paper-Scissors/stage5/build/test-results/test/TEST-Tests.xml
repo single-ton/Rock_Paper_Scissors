@@ -1,52 +1,557 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Tests" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-09-28T16:17:42" hostname="DESKTOP-6F1GHN9" time="0.003">
+<testsuite name="Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-09-28T22:52:38" hostname="DESKTOP-6F1GHN9" time="0.835">
   <properties/>
-  <testcase name="testSolution" classname="Tests" time="0.003">
-    <failure message="java.lang.AssertionError: Tests not implemented for the task" type="java.lang.AssertionError">java.lang.AssertionError: Tests not implemented for the task
-	at org.junit.Assert.fail(Assert.java:88)
-	at Tests.testSolution(Tests.java:8)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</failure>
-  </testcase>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="start" classname="Tests" time="0.835"/>
+  <system-out><![CDATA[?[1;31m
+Start test 1?[0m
+Enter your name:> Bob
+Hello, Bob
+> 
+Okay, let's start
+> rock
+Well done. The computer chose scissors and failed
+> paper
+There is a draw (paper)
+> scissors
+Sorry, but the computer chose rock
+> paper
+There is a draw (paper)
+> scissors
+There is a draw (scissors)
+> rock
+Well done. The computer chose scissors and failed
+> paper
+Sorry, but the computer chose scissors
+> scissors
+Well done. The computer chose paper and failed
+> !exit
+Bye!
+?[1;31m
+Start test 2?[0m
+Enter your name:> Bob
+Hello, Bob
+> 
+Okay, let's start
+> scissors
+Well done. The computer chose paper and failed
+> scissors
+There is a draw (scissors)
+> scissors
+Sorry, but the computer chose rock
+> !exit
+Bye!
+?[1;31m
+Start test 3?[0m
+Enter your name:> Bob
+Hello, Bob
+> 
+Okay, let's start
+> rock
+Sorry, but the computer chose paper
+> paper
+There is a draw (paper)
+> paper
+Sorry, but the computer chose scissors
+> scissors
+Sorry, but the computer chose rock
+> blabla
+Invalid input
+> !exit
+Bye!
+?[1;31m
+Start test 4?[0m
+Enter your name:> Bob
+Hello, Bob
+> 
+Okay, let's start
+> rock
+Sorry, but the computer chose paper
+> invalid
+Invalid input
+> !exit
+Bye!
+?[1;31m
+Start test 5?[0m
+Enter your name:> Bob
+Hello, Bob
+> 
+Okay, let's start
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock-n-roll
+Invalid input
+> !exit
+Bye!
+?[1;31m
+Start test 6?[0m
+Enter your name:> Bob
+Hello, Bob
+> 
+Okay, let's start
+> rock
+Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> !exit
+Bye!
+?[1;31m
+Start test 7?[0m
+Enter your name:> Bob
+Hello, Bob
+> 
+Okay, let's start
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+Sorry, but the computer chose paper
+> !rating
+Your rating: 5800
+> !exit
+Bye!
+?[1;31m
+Start test 8?[0m
+Enter your name:> Bob
+Hello, Bob
+> rock,gun,lightning,devil,dragon,water,air,paper,sponge,wolf,tree,human,snake,scissors,fire
+Okay, let's start
+> fire
+Well done. The computer chose paper and failed
+> water
+Well done. The computer chose lightning and failed
+> air
+Sorry, but the computer chose scissors
+> tree
+Sorry, but the computer chose rock
+> wolf
+There is a draw (wolf)
+> water
+Sorry, but the computer chose sponge
+> dragon
+Sorry, but the computer chose sponge
+> fire
+Sorry, but the computer chose water
+> rock
+Well done. The computer chose sponge and failed
+> paper
+Well done. The computer chose air and failed
+> scissors
+Sorry, but the computer chose dragon
+> lightning
+Sorry, but the computer chose devil
+> water
+Sorry, but the computer chose air
+> wolf
+Well done. The computer chose air and failed
+> dragon
+There is a draw (dragon)
+> devil
+Well done. The computer chose gun and failed
+> wolf
+Sorry, but the computer chose human
+> gun
+Sorry, but the computer chose water
+> devil
+Sorry, but the computer chose sponge
+> human
+There is a draw (human)
+> !rating
+Your rating: 1100
+> !exit
+Bye!
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
