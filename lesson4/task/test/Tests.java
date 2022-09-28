@@ -42,10 +42,10 @@ public class Tests extends StageTest<String> {
   CheckResult checkResults(String reply, String attach){
     for(String s:reply.toLowerCase().split("\n")){
       if(s.contains("sorry"))
-        draws++;
-      if(s.contains("draw"))
         loses++;
-      if(s.contains("well done"))
+      else if(s.contains("draw"))
+        draws++;
+      else if(s.contains("well done"))
         wins++;
     }
 
@@ -120,7 +120,7 @@ public class Tests extends StageTest<String> {
   CheckResult checkFile(String reply, String attach){
     if(!reply.toLowerCase().contains("enter your name"))
       return CheckResult.wrong("Seems like you did not offer the user to input their name. Your program should output \"Enter your name:\" before the start of the game.\n");
-    if (!reply.toLowerCase().contains(String.format("hello, %s", userName)))
+    if (!reply.toLowerCase().contains(String.format("hello, %s", userName).toLowerCase()))
       return CheckResult.wrong("Seems like you did not greet the user. Your program should output \"Hello, <user_name>\"\n");
     for(String line:reply.split("\n")){
       String lowerLine = line.toLowerCase();
@@ -131,12 +131,17 @@ public class Tests extends StageTest<String> {
       else if (lowerLine.contains("sorry") && !lowerLine.contains("paper"))
         return CheckResult.wrong(String.format("Wrong result of the game:\n> rock\n%s\nOnly paper can beat rock!", line));
     }
+    draws=0;
+    loses=0;
+    wins=0;
     for(String s:reply.toLowerCase().split("\n")){
-      if(s.contains("sorry"))
-        draws++;
-      if(s.contains("draw"))
+      if(s.contains("sorry")){
         loses++;
-      if(s.contains("well done"))
+      }
+      else if(s.contains("draw")){
+        draws++;
+      }
+      else if(s.contains("well done"))
         wins++;
     }
     int correctPoints = startScore+wins*100+draws*50;

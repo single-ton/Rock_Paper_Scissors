@@ -40,7 +40,7 @@ public class Task {
                 rating+=100;
             }
             else if(input.equals("!rating"))
-                System.out.printf("Your rating: %s", rating);
+                System.out.printf("Your rating: %s\n", rating);
             else if(input.equals("!exit")) {
                 System.out.println("Bye!");
                 break;
