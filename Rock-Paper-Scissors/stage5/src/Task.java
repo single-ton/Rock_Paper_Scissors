@@ -67,11 +67,11 @@ public class Task {
         }
         Random r = new Random();
         int len = options.keySet().size();
-        int randIndex = r.nextInt(0,len);
+        int randIndex;
 
         System.out.println("Okay, let's start");
         while(true){
-            randIndex = r.nextInt(0,len);
+            randIndex = r.nextInt(len);
             String option="121212121";
             int i=0;
             for(String s:options.keySet()){

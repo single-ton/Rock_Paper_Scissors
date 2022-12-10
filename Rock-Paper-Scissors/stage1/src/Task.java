@@ -29,6 +29,6 @@ public class Task {
         return "NotExist";
     }
     static String getOutput(String input){
-        return String.format("Sorry, but the computer chose %s",getWin(input));
+        return String.format("Sorry0, but the computer chose %s",getWin(input));
     }
 }
