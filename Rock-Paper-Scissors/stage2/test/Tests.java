@@ -16,11 +16,12 @@ public class Tests extends StageTest<String> {
     int draws = 0;
 
     CheckResult checkRandom(String reply, String attach) {
-        CheckResult wrongRandomize = CheckResult.wrong(String.format("The results of the games: %s wins, %s draws and %s loses\n" +
-                "Looks like you don't use the random module to choose a random option!\n" +
-                "The number of wins, draws and loses should be approximately the same.\n" +
-                "Make sure you output the results of the games the same way as in the examples!\n" +
-                "If you are sure that you use random module try to rerun the tests!\n", wins, draws, loses));
+        CheckResult wrongRandomize = CheckResult.wrong(String.format(
+                "The results of the games: %s wins, %s draws and %s loses\n" +
+                        "Looks like you don't use the random module to choose a random option!\n" +
+                        "The number of wins, draws and loses should be approximately the same.\n" +
+                        "Make sure you output the results of the games the same way as in the examples!\n" +
+                        "If you are sure that you use random module try to rerun the tests!\n", wins, draws, loses));
         if (loses < 30)
             return wrongRandomize;
         if (draws < 30)
@@ -31,10 +32,11 @@ public class Tests extends StageTest<String> {
     }
 
     public CheckResult check(String reply, String attach) {
-        CheckResult wrongResult = CheckResult.wrong(String.format("Seems like your answer (\"%s\") is either inconsistent " +
-                "with the rock-paper-scissors rules or the string is formatted incorrectly.  " +
-                "Check punctuation, spelling, and capitalization of your output. " +
-                "Also, make sure you are following the rules of the game.", reply.strip()));
+        CheckResult wrongResult = CheckResult.wrong(String.format(
+                "Seems like your answer (\"%s\") is either inconsistent " +
+                        "with the rock-paper-scissors rules or the string is formatted incorrectly.  " +
+                        "Check punctuation, spelling, and capitalization of your output. " +
+                        "Also, make sure you are following the rules of the game.", reply.strip()));
         Dictionary<String, String> hits = new Hashtable<>();
         hits.put("rock", "scissors");
         hits.put("scissors", "paper");

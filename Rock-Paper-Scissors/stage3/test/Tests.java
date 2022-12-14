@@ -50,8 +50,9 @@ public class Tests extends StageTest<String> {
 
     CheckResult checkInvalidInput(String reply, String attach) {
         if (!reply.toLowerCase().contains("invalid"))
-            return CheckResult.wrong("Looks like your program doesn't handle invalid inputs correctly.\n" +
-                    "You should print 'Invalid input' if the input can't be processed.");
+            return CheckResult.wrong(
+                    "Looks like your program doesn't handle invalid inputs correctly.\n" +
+                            "You should print 'Invalid input' if the input can't be processed.");
         return CheckResult.correct();
     }
 
@@ -67,10 +68,13 @@ public class Tests extends StageTest<String> {
                 results++;
         }
         if (results != attachInt) {
-            return CheckResult.wrong(String.format("Not enough results of the games were printed!\n" +
+            return CheckResult.wrong(String.format(
+                    "Not enough results of the games were printed!\n " +
                             "Tried to input %s actions and got %s results of the games.\n" +
-                            "Perhaps your program did not run enough games. Is it set up correctly to loop until the user inputs ‘!exit’? \n" +
-                            "Also, make sure you print the result  of the game in the correct format after each valid input!",
+                            "Perhaps your program did not run enough games. " +
+                            "Is it set up correctly to loop until the user inputs ‘!exit’? \n" +
+                            "Also, make sure you print the result  of the game " +
+                            "in the correct format after each valid input!",
                     attach, results));
         }
         return CheckResult.correct();
@@ -91,16 +95,21 @@ public class Tests extends StageTest<String> {
                         "Wrong result of the game:\n> rock\n%s\nRock can only beat scissors!", line));
             else if (lowerLine.contains("draw") && !lowerLine.contains("rock"))
                 return CheckResult.wrong(String.format(
-                        "Wrong result of the game:\n> rock\n%s\nThe game ends with a draw only when the user and the computer both choose the same option", line));
+                        "Wrong result of the game:\n> rock\n%s\n" +
+                                "The game ends with a draw only when the user " +
+                                "and the computer both choose the same option", line));
             else if (lowerLine.contains("sorry") && !lowerLine.contains("paper"))
                 return CheckResult.wrong(String.format(
                         "Wrong result of the game:\n> rock\n%s\nOnly paper can beat rock!", line));
 
         }
-        CheckResult wrongRandomize = CheckResult.wrong(String.format("The results of the games: %s wins, %s draws and %s loses\n" +
-                        "The game is too easy to win. Is the computer being too predictable? The number of wins, draws and loses should be approximately the same.\n" +
+        CheckResult wrongRandomize = CheckResult.wrong(String.format(
+                "The results of the games: %s wins, %s draws and %s loses\n" +
+                        "The game is too easy to win. Is the computer being too predictable? " +
+                        "The number of wins, draws and loses should be approximately the same.\n" +
                         "Perhaps you don't use the random module to choose random option.\n" +
-                        "Also, make sure you output the results of the games the same way as was stated in the examples!\n" +
+                        "Also, make sure you output the results of the games " +
+                        "the same way as was stated in the examples!\n" +
                         "If you are sure that you use the random module, try to rerun the tests!\n",
                 wins, draws, loses));
 

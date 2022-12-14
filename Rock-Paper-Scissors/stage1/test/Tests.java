@@ -23,7 +23,9 @@ public class Tests extends StageTest<String> {
 
     public CheckResult check(String reply, String attach) {
         String correctOutput = String.format("Sorry, but the computer chose %s", attach.strip());
-        return new CheckResult(correctOutput.equals(reply.strip()), String.format("Your answer on \"%s\" was \"%s\". This is a wrong output. The correct output is \"%s\"", attach, reply.strip(), correctOutput));
+        return new CheckResult(correctOutput.equals(reply.strip()),
+                String.format("Your answer on \"%s\" was \"%s\". " +
+                        "This is a wrong output. The correct output is \"%s\"", attach, reply.strip(), correctOutput));
     }
 
     String getWin(String input) {
