@@ -35,10 +35,13 @@ public class Tests extends StageTest<String> {
                 results++;
         }
         if (results != attachInt) {
-            return CheckResult.wrong(String.format("Not enough results of the games were printed!\n" +
+            return CheckResult.wrong(String.format(
+                    "Not enough results of the games were printed!\n" +
                             "Tried to input %s actions and got %s results of the games.\n" +
-                            "Perhaps your program did not run enough games. Is it set up correctly to loop until the user inputs ‘!exit’? \n" +
-                            "Also, make sure you print the result  of the game in the correct format after each valid input!",
+                            "Perhaps your program did not run enough games. " +
+                            "Is it set up correctly to loop until the user inputs ‘!exit’? \n" +
+                            "Also, make sure you print the result  " +
+                            "of the game in the correct format after each valid input!",
                     attach, results));
         }
         return CheckResult.correct();
@@ -53,10 +56,13 @@ public class Tests extends StageTest<String> {
             else if (s.contains("well done"))
                 wins++;
         }
-        CheckResult wrongRandomize = CheckResult.wrong(String.format("The results of the games: %s wins, %s draws and %s loses\n" +
-                        "The game is too easy to win. Is the computer being too predictable? The number of wins, draws and loses should be approximately the same.\n" +
+        CheckResult wrongRandomize = CheckResult.wrong(String.format(
+                "The results of the games: %s wins, %s draws and %s loses\n" +
+                        "The game is too easy to win. Is the computer being too predictable? " +
+                        "The number of wins, draws and loses should be approximately the same.\n" +
                         "Perhaps you don't use the random module to choose random option.\n" +
-                        "Also, make sure you output the results of the games the same way as was stated in the examples!\n" +
+                        "Also, make sure you output the results of the games " +
+                        "the same way as was stated in the examples!\n" +
                         "If you are sure that you use the random module, try to rerun the tests!\n",
                 wins, draws, loses));
 
@@ -72,7 +78,8 @@ public class Tests extends StageTest<String> {
     }
 
     public List<TestCase<String>> generate() {
-        String[] validInputCases = {String.format("%s\nrock\npaper\nscissors\npaper\nscissors\nrock\npaper\nscissors\n!exit", userName),
+        String[] validInputCases = {String.format(
+                "%s\nrock\npaper\nscissors\npaper\nscissors\nrock\npaper\nscissors\n!exit", userName),
                 String.format("%s\nscissors\nscissors\nscissors\n!exit", userName)};
         String[] invalidInputCases = {String.format("%s\nrock\npaper\npaper\nscissors\nblabla\n!exit", userName),
                 String.format("%s\nrock\ninvalid\n!exit", userName),
@@ -125,17 +132,27 @@ public class Tests extends StageTest<String> {
 
     CheckResult checkFile(String reply, String attach) {
         if (!reply.toLowerCase().contains("enter your name"))
-            return CheckResult.wrong("Seems like you did not offer the user to input their name. Your program should output \"Enter your name:\" before the start of the game.\n");
+            return CheckResult.wrong(
+                    "Seems like you did not offer the user to input their name. " +
+                            "Your program should output \"Enter your name:\" before the start of the game.\n");
         if (!reply.toLowerCase().contains(String.format("hello, %s", userName).toLowerCase()))
-            return CheckResult.wrong("Seems like you did not greet the user. Your program should output \"Hello, <user_name>\"\n");
+            return CheckResult.wrong(
+                    "Seems like you did not greet the user. " +
+                            "Your program should output \"Hello, <user_name>\"\n");
         for (String line : reply.split("\n")) {
             String lowerLine = line.toLowerCase();
             if (lowerLine.contains("well done") && !lowerLine.contains("scissors"))
-                return CheckResult.wrong(String.format("Wrong result of the game:\n> rock\n%s\nRock can only beat scissors!", line));
+                return CheckResult.wrong(String.format(
+                        "Wrong result of the game:\n> rock\n%s\nRock can only beat scissors!", line));
             else if (lowerLine.contains("draw") && !lowerLine.contains("rock"))
-                return CheckResult.wrong(String.format("Wrong result of the game:\n> rock\n%s\nThe game ends with a draw only when user option and computer choose the same option", line));
+                return CheckResult.wrong(String.format(
+                        "Wrong result of the game:\n> rock\n%s\n" +
+                                "The game ends with a draw only when user option and computer choose the same option",
+                        line));
             else if (lowerLine.contains("sorry") && !lowerLine.contains("paper"))
-                return CheckResult.wrong(String.format("Wrong result of the game:\n> rock\n%s\nOnly paper can beat rock!", line));
+                return CheckResult.wrong(String.format(
+                        "Wrong result of the game:\n> " +
+                                "rock\n%s\nOnly paper can beat rock!", line));
         }
         draws = 0;
         loses = 0;
