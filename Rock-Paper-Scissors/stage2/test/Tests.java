@@ -37,6 +37,10 @@ public class Tests extends StageTest<String> {
                         "with the rock-paper-scissors rules or the string is formatted incorrectly.  " +
                         "Check punctuation, spelling, and capitalization of your output. " +
                         "Also, make sure you are following the rules of the game.", reply.strip()));
+        String wrongAnswerValidation =
+                "If user input is \"%s\" and computer option is \"%s\"," +
+                        "then computer must print: \"%s\"," +
+                        "but now computer print: \"%s\"";
         Dictionary<String, String> hits = new Hashtable<>();
         hits.put("rock", "scissors");
         hits.put("scissors", "paper");
@@ -63,6 +67,16 @@ public class Tests extends StageTest<String> {
         if (!reply.toLowerCase().contains(result))
             return wrongResult;
 
+        //if(!validationReply(attach,computerOption, reply)){
+        //    return CheckResult.wrong(
+        //            String.format(
+        //                    wrongAnswerValidation,
+        //                    attach,
+        //                    computerOption,
+        //                    getResultReplyLine(attach,computerOption),
+        //                    reply.trim()));
+        //}
+
         if (reply.toLowerCase().contains("sorry"))
             loses += 1;
         else if (reply.toLowerCase().contains("draw"))
@@ -73,6 +87,47 @@ public class Tests extends StageTest<String> {
             return wrongResult;
         return CheckResult.correct();
 
+    }
+    private String getWin(String input) {
+        for (int i = 0; i < cases.length; i++)
+            if (input.equals(cases[i])) {
+                if (i + 1 < cases.length)
+                    return cases[i + 1];
+                else
+                    return cases[0];
+            }
+        return "NotExist";
+    }
+    private boolean validationReply(String input, String computerOption, String reply){
+        if(input.equals(computerOption)) {
+            if (reply.toLowerCase().contains("draw"))
+                return true;
+            else
+                return false;
+        }
+        else if (getWin(input).equals(computerOption)) {
+            if(reply.toLowerCase().contains("sorry"))
+                return true;
+            else
+                return false;
+        }
+        else if(input.equals(getWin(computerOption))) {
+            if (reply.toLowerCase().contains("done"))
+                return true;
+            else
+                return false;
+        }
+        return false;
+    }
+    private String getResultReplyLine(String input, String computerOption){
+        String line="";
+        if (input.equals(computerOption))
+            line = String.format("There is a draw (%s)\n", computerOption);
+        else if (getWin(input).equals(computerOption))
+            line = String.format("Sorry, but the computer chose %s\n", computerOption);
+        else if (input.equals(getWin(computerOption)))
+            line = String.format("Well done. The computer chose %s and failed\n", computerOption);
+        return line;
     }
 
     public List<TestCase<String>> generate() {

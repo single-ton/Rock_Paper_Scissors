@@ -69,7 +69,7 @@ public class Tests extends StageTest<String> {
         }
         if (results != attachInt) {
             return CheckResult.wrong(String.format(
-                    "Not enough results of the games were printed!\n " +
+                    "Not enough results of the games were printed!\n" +
                             "Tried to input %s actions and got %s results of the games.\n" +
                             "Perhaps your program did not run enough games. " +
                             "Is it set up correctly to loop until the user inputs ‘!exit’? \n" +

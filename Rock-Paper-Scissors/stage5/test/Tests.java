@@ -40,8 +40,9 @@ public class Tests extends StageTest<String> {
         if (results != attachInt) {
             return CheckResult.wrong(String.format("Not enough results of the games were printed!\n" +
                             "Tried to input %s actions and got %s results of the games.\n" +
-                            "Perhaps your program did not run enough games. Is it set up correctly to loop until the user inputs ‘!exit’? \n" +
-                            "Also, make sure you print the result  of the game in the correct format after each valid input!",
+                            "Perhaps your program did not run enough games. Is it set up correctly to loop " +
+                            "until the user inputs ‘!exit’? \nAlso, make sure you print the result of the " +
+                            "game in the correct format after each valid input!",
                     attach, results));
         }
         return CheckResult.correct();
@@ -286,7 +287,7 @@ public class Tests extends StageTest<String> {
                             "user's initial score written in the file.\n" +
                             "For each draw, add 50 point to the score. " +
                             "For each user's win, add 100 to his/her score.\n" +
-                            "In case the user loses, don't change the score. ");
+                            "In case the user loses, don't change the score. ");
         return CheckResult.correct();
 
     }
