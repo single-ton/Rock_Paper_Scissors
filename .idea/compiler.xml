@@ -1,6 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="11" />
+    <bytecodeTargetLevel target="11">
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage1" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage1-build-classes-java" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage1-build-classes-java.main" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage1-build-classes-java.test" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage1-build-reports-tests" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage1-build-reports-tests.main" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage1-build-reports-tests.test" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage1-build-test-results" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage1-build-test-results.main" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage1-build-test-results.test" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage1-build-tmp" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage1-build-tmp.main" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage1-build-tmp.test" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage1-out" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage1-out.main" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage1-out.test" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage1.main" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage1.test" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage2" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage2-build-classes-java" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage2-build-classes-java.main" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage2-build-classes-java.test" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage2-build-reports-tests" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage2-build-reports-tests.main" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage2-build-reports-tests.test" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage2-build-test-results" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage2-build-test-results.main" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage2-build-test-results.test" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage2-build-tmp" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage2-build-tmp.main" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage2-build-tmp.test" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage2-out" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage2-out.main" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage2-out.test" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage2.main" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage2.test" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage3" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage3-out" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage3-out.main" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage3-out.test" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage3.main" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage3.test" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage4" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage4-build-classes-java" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage4-build-classes-java.main" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage4-build-classes-java.test" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage4-build-reports-tests" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage4-build-reports-tests.main" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage4-build-reports-tests.test" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage4-build-test-results" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage4-build-test-results.main" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage4-build-test-results.test" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage4-build-tmp" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage4-build-tmp.main" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage4-build-tmp.test" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage4.main" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage4.test" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage5" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage5-build-classes-java" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage5-build-classes-java.main" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage5-build-classes-java.test" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage5-build-reports-tests" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage5-build-reports-tests.main" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage5-build-reports-tests.test" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage5-build-test-results" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage5-build-test-results.main" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage5-build-test-results.test" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage5-out" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage5-out.main" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage5-out.test" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage5.main" target="17" />
+      <module name="Rock_Paper_Scissors.Rock-Paper-Scissors-stage5.test" target="17" />
+      <module name="Rock_Paper_Scissors.util" target="17" />
+      <module name="Rock_Paper_Scissors.util.main" target="17" />
+      <module name="Rock_Paper_Scissors.util.test" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
